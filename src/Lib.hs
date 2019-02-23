@@ -1,9 +1,7 @@
-module Lib
-    ( someFunc
-    ) where
+{-# LANGUAGE PolyKinds #-}
+{-# LANGUAGE StarIsType#-}
+{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE GADTs #-}
+{-# LANGUAGE UnicodeSyntax #-}
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
-
-someVar :: IO Integer
-someVar    = return 114514
+module Lib ( ) where
